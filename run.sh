@@ -1,0 +1,1 @@
+FLASK_APP=NBA_predict/app.py flask run
