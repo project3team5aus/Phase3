@@ -1,1 +1,1 @@
-web: gunicorn Phase2.app:app
+web: gunicorn NBA_predict.app:app
