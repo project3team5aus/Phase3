@@ -1,0 +1,1 @@
+web: gunicorn NBA_predict.app:app

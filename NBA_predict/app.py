@@ -11,10 +11,15 @@ from flask import Flask, jsonify, render_template
 import jsons
 
 #################################################
+# Flask Setup
+#################################################
+app = Flask(__name__)
+
+#################################################
 # Database Setup
 #################################################
-engine = create_engine('sqlite:///db/schedule_abr.sqlite', connect_args={'check_same_thread': False}, echo=False)
-
+# engine = create_engine('sqlite:///db/schedule_abr.sqlite', connect_args={'check_same_thread': False}, echo=False)
+engine = create_engine('sqlite:///NBA_predict/db/schedule_abr.sqlite', connect_args={'check_same_thread': False}, echo=False)
 # reflect an existing database into a new model
 Base = automap_base()
 # reflect the tables
@@ -28,11 +33,6 @@ YearPredictions = Base.classes.year_predictions
 
 # Create our session (link) from Python to the DB
 session = Session(engine)
-
-#################################################
-# Flask Setup
-#################################################
-app = Flask(__name__)
 
 
 #################################################
