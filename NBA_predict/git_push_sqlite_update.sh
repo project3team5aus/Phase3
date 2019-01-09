@@ -1,9 +1,12 @@
-#!/bin/sh
+#!/usr/bin bash
+#!/usr/bin sh
+#!/Users/lcc25/Anaconda python
+
 echo Start of script to push sqlite updates to GitHub
-cd /c/UTDataBootCamp_Z_work/project3/four_factors/Phase2/cloned_from_github/Phase2
+cd /c/Users/lcc25/repos/Phase3
 git add .
 sleep 1
-git commit -am "update sqlite after game_predictions.py was run"
+git commit -am "update sqlite after game_predictions.py was run-lcc"
 sleep 2
 git push -u origin master
 sleep 15
