@@ -6,9 +6,8 @@ echo start daily update
 cd /c/Users/lcc25/repos/Phase3/NBA_predict
 python game_predictions.py
 
-sleep 25
-
-echo end of daily update
+wait 
+echo end of daily update python
 
 echo Start of script to push sqlite updates to GitHub
 cd /c/Users/lcc25/repos/Phase3
